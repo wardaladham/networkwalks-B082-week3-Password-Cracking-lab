@@ -19,7 +19,7 @@ Below are the key visual artifacts and verification steps captured across both l
 ### 1. Extracted Flag & Unlocked Content
 Upon successfully cracking the document password (`password1` / `good-luck`), the encrypted PDF (`My Locked PDF1.pdf`) reveals the captured flag [cite: 1, 2]:
 
-![Captured Flag Page](input_file_0.png)
+![Captured Flag Page](/images/input_file_0.png)
 *Figure 1: PDF unlocked successfully, revealing Flag 1: `nw{networkwalks_flag1_jtr_270521_1}`.* [cite: 1]
 
 ---
