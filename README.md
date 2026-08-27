@@ -19,7 +19,7 @@ Below are the key visual artifacts and verification steps captured across both l
 ### 1. Extracted Flag & Unlocked Content
 Upon successfully cracking the document password (`password1` / `good-luck`), the encrypted PDF (`My Locked PDF1.pdf`) reveals the captured flag:
 
-![Captured Flag Page](/images/input_file_0.jpg)
+![Captured Flag Page](/images/input_file_0.png)
 *Figure 1: PDF unlocked successfully, revealing Flag 1: `nw{networkwalks_flag1_jtr_270521_1}`.*
 
 ---
@@ -57,7 +57,7 @@ Uploading `My Locked PDF1.pdf` directly parses the encrypted header locally in t
 #### Networkwalks Online Password Cracker
 Pasting the extracted hash into the browser-based dictionary cracker executes real-time wordlist testing at ~9 pw/s until matching `password1`:
 
-![Networkwalks Password Cracker Match](/images/Screenshot 2026-08-27 132653.jpg)
+![Networkwalks Password Cracker Match](/images/Screenshot 2026-08-27 132653.png)
 *Figure 6: Dictionary attack match identified: `password1`.*
 
 ---
