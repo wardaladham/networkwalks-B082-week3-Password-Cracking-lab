@@ -29,7 +29,7 @@ Upon successfully cracking the document password (`password1` / `good-luck`), th
 #### Setup & Configuration
 Johnny GUI acts as a frontend for John the Ripper (Jumbo release) [cite: 1]. The `john.exe` binary path must be configured in Settings [cite: 1]:
 
-![Johnny GUI Settings](input_file_1.png)
+![Johnny GUI Settings](images/module1 flag.png)
 *Figure 2: Configuring `john.exe` path in Johnny GUI Settings.* [cite: 1]
 
 #### Online Hash Extraction (pdf2john Format)
