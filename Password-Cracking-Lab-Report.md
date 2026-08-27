@@ -40,11 +40,11 @@ I copied this hash, pasted it into Notepad, and saved it as `hash1.txt` in the f
 
 Back in Johnny, I used **Open password file** to load `hash1.txt`, then clicked **Start new attack**. Johnny ran John the Ripper against the hash and, once complete, displayed the cracked password directly in the Password column.
 
-![Johnny showing the cracked password "password1"](images/03-johnny-cracked-password.png)
+![Johnny showing the cracked password "good-luck"](images/03-johnny-cracked-password.png)
 
 ### Step 4 — Unlock the PDF and capture Flag 1
 
-Using the recovered password, I opened `My-Locked-PDF1.pdf` in Adobe Acrobat Reader and entered the password to unlock it. The file opened to reveal the first flag:
+Using the recovered password (`good-luck`), I opened `My-Locked-PDF1.pdf` in Adobe Acrobat Reader and entered the password to unlock it. The file opened to reveal the first flag:
 
 ```
 nw{networkwalks_flag1_jtr_270521_1}
@@ -86,11 +86,11 @@ Using the cracked password (`password1`), I opened the locked PDF again and conf
 
 | Module | Tool(s) Used | Method | Recovered Password |
 |---|---|---|---|
-| 1 | Online Hash Crack (pdf2john) + John the Ripper / Johnny | Local GUI dictionary attack | `password1` |
+| 1 | Online Hash Crack (pdf2john) + John the Ripper / Johnny | Local GUI dictionary attack | `good-luck` |
 | 2 | Networkwalks Hash Calculator + Networkwalks Password Cracker | Browser-based dictionary attack | `password1` |
 
-Both approaches confirmed the same password, `password1`, for `My-Locked-PDF1.pdf` — demonstrating that even different tools (a locally installed cracker vs. an in-browser one) converge on the same result when the underlying hash and wordlist logic are the same.
+Both approaches successfully recovered the password protecting their respective PDF, demonstrating that a locally installed cracker (JTR/Johnny) and an in-browser one (Networkwalks tools) can each break weak passwords using nothing more than a dictionary attack.
 
 ### Key takeaway
 
-`password1` is a very weak, easily guessable password — it appears in virtually every common password wordlist. This lab illustrates why weak or common passwords can be cracked in seconds to minutes, while longer, unique, mixed-character passwords resist dictionary and brute-force attacks far more effectively.
+Both `good-luck` and `password1` are weak, easily guessable passwords that appear in common password wordlists. This lab illustrates why weak or common passwords can be cracked in seconds to minutes, while longer, unique, mixed-character passwords resist dictionary and brute-force attacks far more effectively.
